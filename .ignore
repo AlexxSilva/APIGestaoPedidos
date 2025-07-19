@@ -1,0 +1,69 @@
+## Build results
+[Bb]in/
+[Oo]bj/
+out/
+
+## User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+## Rider
+.idea/
+
+## VS Code
+.vscode/
+
+## ASP.NET temporary files
+**/wwwroot/lib/
+**/wwwroot/node_modules/
+
+## DotCover
+*.dotCover
+
+## Logs
+*.log
+logs/
+*.tlog
+
+## Test Results
+TestResults/
+*.trx
+*.coverage
+*.coveragexml
+
+## Others
+*.db
+*.pdb
+*.cache
+*.zip
+*.bak
+*.tmp
+
+## Entity Framework
+Migrations/  # Se quiser ignorar as migrations, senão remova essa linha
+
+## Secrets
+appsettings.Development.json
+appsettings.Local.json
+secrets.json
+
+## NuGet
+*.nupkg
+.nuget/
+
+## Docker
+docker-compose.override.yml
+.env
+.env.*
+
+## OS Files
+Thumbs.db
+.DS_Store
+
+## Global JetBrains Rider settings
+.idea/
+
+## Git folder ignore (for repo in repo)
+.git/
