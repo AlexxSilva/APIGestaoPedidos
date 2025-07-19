@@ -1,39 +1,40 @@
-## Build results
+# Build results
 [Bb]in/
 [Oo]bj/
 out/
 
-## User-specific files
+# User-specific files (Visual Studio)
+.vs/
 *.user
 *.suo
 *.userosscache
 *.sln.docstates
 
-## Rider
+# Rider
 .idea/
 
-## VS Code
+# VS Code
 .vscode/
 
-## ASP.NET temporary files
-**/wwwroot/lib/
-**/wwwroot/node_modules/
+# ASP.NET Core - arquivos temporários
+wwwroot/lib/
+wwwroot/node_modules/
 
-## DotCover
+# DotCover
 *.dotCover
 
-## Logs
+# Logs
 *.log
 logs/
 *.tlog
 
-## Test Results
+# Test Results
 TestResults/
 *.trx
 *.coverage
 *.coveragexml
 
-## Others
+# Outras extensões geradas em tempo de execução
 *.db
 *.pdb
 *.cache
@@ -41,29 +42,30 @@ TestResults/
 *.bak
 *.tmp
 
-## Entity Framework
-Migrations/  # Se quiser ignorar as migrations, senão remova essa linha
-
-## Secrets
+# Arquivos de configuração sensíveis
 appsettings.Development.json
 appsettings.Local.json
 secrets.json
 
-## NuGet
+# NuGet
 *.nupkg
 .nuget/
+packages/
 
-## Docker
+# Docker
 docker-compose.override.yml
 .env
 .env.*
 
-## OS Files
+# Arquivos de sistema operacional
 Thumbs.db
 .DS_Store
 
-## Global JetBrains Rider settings
-.idea/
-
-## Git folder ignore (for repo in repo)
+# Git interno de subrepos (caso existam)
 .git/
+
+# Outros comuns para C#
+_ReSharper*/
+*.ncrunch*
+*.orig
+*.rej
