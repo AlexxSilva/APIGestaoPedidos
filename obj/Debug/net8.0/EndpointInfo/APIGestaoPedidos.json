@@ -258,8 +258,7 @@
             "items": {
               "$ref": "#/components/schemas/PedidoItem"
             },
-            "nullable": true,
-            "readOnly": true
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -269,21 +268,17 @@
         "properties": {
           "id": {
             "type": "integer",
-            "format": "int32"
+            "format": "int32",
+            "readOnly": true
           },
           "pedidoId": {
             "type": "integer",
-            "format": "int32"
-          },
-          "pedido": {
-            "$ref": "#/components/schemas/Pedido"
+            "format": "int32",
+            "readOnly": true
           },
           "produtoId": {
             "type": "integer",
             "format": "int32"
-          },
-          "produto": {
-            "$ref": "#/components/schemas/Produto"
           },
           "valorUnitario": {
             "type": "number",
@@ -297,7 +292,8 @@
         "properties": {
           "id": {
             "type": "integer",
-            "format": "int32"
+            "format": "int32",
+            "readOnly": true
           },
           "descricao": {
             "type": "string",
@@ -309,13 +305,6 @@
           },
           "estoque": {
             "type": "string",
-            "nullable": true
-          },
-          "pedidoItens": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/PedidoItem"
-            },
             "nullable": true
           }
         },

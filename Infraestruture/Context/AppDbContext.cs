@@ -35,7 +35,7 @@ namespace APIGestaoPedidos.Infraestruture.Context
             // PedidoItem → Produto
             modelBuilder.Entity<PedidoItem>()
                 .HasOne(i => i.Produto)
-                .WithMany(p => p.PedidoItens)
+                .WithMany()//Produto desvinculado do PedidoItem
                 .HasForeignKey(i => i.ProdutoId)
                 .OnDelete(DeleteBehavior.Restrict);
         }

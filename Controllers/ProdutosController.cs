@@ -33,7 +33,7 @@ namespace APIGestaoPedidos.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Criar(Produto produto)
+        public async Task<IActionResult> Criar([FromBody] Produto produto)
         {
             _context.Produtos.Add(produto);
             await _context.SaveChangesAsync();

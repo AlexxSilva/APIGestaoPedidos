@@ -1,4 +1,5 @@
 ﻿using APIGestaoPedidos.Domain.Entidades;
+using APIGestaoPedidos.Dto;
 using APIGestaoPedidos.Infraestruture.Context;
 using Microsoft.EntityFrameworkCore;
 
@@ -13,46 +14,77 @@ namespace APIGestaoPedidos.Services
             _context = context;
         }
 
-        public async Task<List<Pedido>> ListarTodosAsync()
+        public async Task<List<PedidoDto>> ListarTodosAsync()
         {
             return await _context.Pedidos
-                .Include(p => p.Cliente)
-                .Include(p => p.Itens)
-                    .ThenInclude(i => i.Produto)
-                .ToListAsync();
+        .Include(p => p.Cliente)
+        .Include(p => p.Itens)
+            .ThenInclude(i => i.Produto)
+        .Select(p => new PedidoDto
+        {
+            Id = p.Id,
+            ClienteId = p.ClienteId,
+            ClienteNome = p.Cliente.Nome,
+            Status = (int)p.Status,
+            Itens = p.Itens.Select(i => new PedidoItemDto
+            {
+                ProdutoId = i.ProdutoId,
+                ProdutoDescricao = i.Produto.Descricao,
+                ValorUnitario = i.ValorUnitario
+            }).ToList()
+        })
+        .ToListAsync();
         }
 
-        public async Task<Pedido?> BuscarPorIdAsync(int id)
+        public async Task<PedidoDto?> BuscarPorIdAsync(int id)
         {
             return await _context.Pedidos
                 .Include(p => p.Cliente)
                 .Include(p => p.Itens)
                     .ThenInclude(i => i.Produto)
+                     .Select(p => new PedidoDto
+                     {
+                         Id = p.Id,
+                         ClienteId = p.ClienteId,
+                         ClienteNome = p.Cliente.Nome,
+                         Status = (int)p.Status,
+                         Itens = p.Itens.Select(i => new PedidoItemDto
+                         {
+                             ProdutoId = i.ProdutoId,
+                             ProdutoDescricao = i.Produto.Descricao,
+                             ValorUnitario = i.ValorUnitario
+                         }).ToList()
+                     })
                 .FirstOrDefaultAsync(p => p.Id == id);
         }
 
         public async Task<Pedido> CriarPedidoAsync(Pedido pedido)
         {
-            if (pedido.Itens == null || pedido.Itens.Count == 0)
-                throw new ArgumentException("Pedido deve conter ao menos um item.");
-
-            if (pedido.Cliente == null)
+        
+            //Valida se o cliente foi preenchido
+            if (pedido.ClienteId == 0)
                 throw new ArgumentException("Cliente deve ser informado.");
 
-            var cliente = await _context.Clientes.FindAsync(pedido.Cliente.Id);
+            //Valida se o cliente existe
+            var cliente = await _context.Clientes.FindAsync(pedido.ClienteId);
             if (cliente == null)
                 throw new ArgumentException("Cliente não encontrado.");
 
+
+            //Verifica se adicionou itens ao pedido
+            if (pedido.Itens == null || pedido.Itens.Count == 0)
+                throw new ArgumentException("Pedido deve conter ao menos um item.");
+
+            //verifica se os itens do pedido são validos
             foreach (var item in pedido.Itens)
             {
-                var produto = await _context.Produtos.FindAsync(item.Produto.Id);
+                var produto = await _context.Produtos.FindAsync(item.ProdutoId);
                 if (produto == null)
                     throw new ArgumentException($"Produto com ID {item.Produto.Id} não encontrado.");
                 item.Produto = produto;
-                item.ValorUnitario = produto.Estoque.Length; // Exemplo, ajuste pra lógica real
+                item.ValorUnitario = produto.Estoque.Length; 
             }
 
-            pedido = new Pedido(); // pode construir com um construtor
             pedido.AdicionarItens(pedido.Itens);
             pedido.DefinirCliente(cliente);
 

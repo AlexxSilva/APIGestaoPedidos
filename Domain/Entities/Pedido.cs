@@ -12,11 +12,10 @@ namespace APIGestaoPedidos.Domain.Entidades
         public int Id { get; private set; }
 
         public int ClienteId { get; set; }
-
         [JsonIgnore]
         public Cliente? Cliente { get; private set; }
-        public StatusPedido Status { get; private set; } = StatusPedido.Pendente;
-        public List<PedidoItem> Itens { get; private set; } = new();
+        public StatusPedido Status { get;  set; } = StatusPedido.Pendente;
+        public List<PedidoItem> Itens { get;  set; } = new();
 
         public void Aprovar()
         {

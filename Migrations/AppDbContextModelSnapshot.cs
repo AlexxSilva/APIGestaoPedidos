@@ -39,7 +39,7 @@ namespace APIGestaoPedidos.Migrations
 
                     b.HasIndex("ClienteId");
 
-                    b.ToTable("Pedidos");
+                    b.ToTable("Pedidos", (string)null);
                 });
 
             modelBuilder.Entity("APIGestaoPedidos.Domain.Entidades.PedidoItem", b =>
@@ -65,7 +65,7 @@ namespace APIGestaoPedidos.Migrations
 
                     b.HasIndex("ProdutoId");
 
-                    b.ToTable("PedidoItens");
+                    b.ToTable("PedidoItens", (string)null);
                 });
 
             modelBuilder.Entity("APIGestaoPedidos.Domain.Entities.Cliente", b =>
@@ -82,7 +82,7 @@ namespace APIGestaoPedidos.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Clientes");
+                    b.ToTable("Clientes", (string)null);
                 });
 
             modelBuilder.Entity("APIGestaoPedidos.Domain.Entities.Produto", b =>
@@ -107,7 +107,7 @@ namespace APIGestaoPedidos.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Produtos");
+                    b.ToTable("Produtos", (string)null);
                 });
 
             modelBuilder.Entity("APIGestaoPedidos.Domain.Entidades.Pedido", b =>

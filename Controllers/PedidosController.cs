@@ -1,4 +1,5 @@
 ﻿using APIGestaoPedidos.Domain.Entidades;
+using APIGestaoPedidos.Domain.Entities;
 using APIGestaoPedidos.Infraestruture.Context;
 using APIGestaoPedidos.Services;
 using Microsoft.AspNetCore.Http;
@@ -41,7 +42,7 @@ namespace APIGestaoPedidos.Controllers
 
         // POST: api/pedidos
         [HttpPost]
-        public async Task<IActionResult> Criar(Pedido pedido)
+        public async Task<IActionResult> Criar([FromBody] Pedido pedido)
         {
             if (pedido == null || pedido.Itens == null || pedido.Itens.Count == 0)
                 return BadRequest("Pedido inválido.");
