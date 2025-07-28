@@ -1,7 +1,32 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Projetos\\Pos engenharia de software\\Cursos extras\\APIGestaoPedidos\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E5FFAB83-2577-45A5-8CB3-73CE8E6DC2AE}|APIGestaoPedidos.csproj|c:\\projetos\\pos engenharia de software\\cursos extras\\apigestaopedidos\\controllers\\clientescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E5FFAB83-2577-45A5-8CB3-73CE8E6DC2AE}|APIGestaoPedidos.csproj|solutionrelative:controllers\\clientescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E5FFAB83-2577-45A5-8CB3-73CE8E6DC2AE}|APIGestaoPedidos.csproj|c:\\projetos\\pos engenharia de software\\cursos extras\\apigestaopedidos\\infraestruture\\interfaces\\ipedidorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E5FFAB83-2577-45A5-8CB3-73CE8E6DC2AE}|APIGestaoPedidos.csproj|solutionrelative:infraestruture\\interfaces\\ipedidorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E5FFAB83-2577-45A5-8CB3-73CE8E6DC2AE}|APIGestaoPedidos.csproj|c:\\projetos\\pos engenharia de software\\cursos extras\\apigestaopedidos\\infraestruture\\repositories\\pedidorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E5FFAB83-2577-45A5-8CB3-73CE8E6DC2AE}|APIGestaoPedidos.csproj|solutionrelative:infraestruture\\repositories\\pedidorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E5FFAB83-2577-45A5-8CB3-73CE8E6DC2AE}|APIGestaoPedidos.csproj|c:\\projetos\\pos engenharia de software\\cursos extras\\apigestaopedidos\\domain\\entities\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E5FFAB83-2577-45A5-8CB3-73CE8E6DC2AE}|APIGestaoPedidos.csproj|solutionrelative:domain\\entities\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E5FFAB83-2577-45A5-8CB3-73CE8E6DC2AE}|APIGestaoPedidos.csproj|c:\\projetos\\pos engenharia de software\\cursos extras\\apigestaopedidos\\domain\\entities\\pedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E5FFAB83-2577-45A5-8CB3-73CE8E6DC2AE}|APIGestaoPedidos.csproj|solutionrelative:domain\\entities\\pedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E5FFAB83-2577-45A5-8CB3-73CE8E6DC2AE}|APIGestaoPedidos.csproj|c:\\projetos\\pos engenharia de software\\cursos extras\\apigestaopedidos\\domain\\entities\\pedidoitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E5FFAB83-2577-45A5-8CB3-73CE8E6DC2AE}|APIGestaoPedidos.csproj|solutionrelative:domain\\entities\\pedidoitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,6 +67,84 @@
             {
               "$type": "Bookmark",
               "Name": "ST:136:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ClientesController.cs",
+              "DocumentMoniker": "C:\\Projetos\\Pos engenharia de software\\Cursos extras\\APIGestaoPedidos\\Controllers\\ClientesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ClientesController.cs",
+              "ToolTip": "C:\\Projetos\\Pos engenharia de software\\Cursos extras\\APIGestaoPedidos\\Controllers\\ClientesController.cs",
+              "RelativeToolTip": "Controllers\\ClientesController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-28T23:15:35.848Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PedidoRepository.cs",
+              "DocumentMoniker": "C:\\Projetos\\Pos engenharia de software\\Cursos extras\\APIGestaoPedidos\\Infraestruture\\Repositories\\PedidoRepository.cs",
+              "RelativeDocumentMoniker": "Infraestruture\\Repositories\\PedidoRepository.cs",
+              "ToolTip": "C:\\Projetos\\Pos engenharia de software\\Cursos extras\\APIGestaoPedidos\\Infraestruture\\Repositories\\PedidoRepository.cs",
+              "RelativeToolTip": "Infraestruture\\Repositories\\PedidoRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-28T23:15:10.385Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IPedidoRepository.cs",
+              "DocumentMoniker": "C:\\Projetos\\Pos engenharia de software\\Cursos extras\\APIGestaoPedidos\\Infraestruture\\Interfaces\\IPedidoRepository.cs",
+              "RelativeDocumentMoniker": "Infraestruture\\Interfaces\\IPedidoRepository.cs",
+              "ToolTip": "C:\\Projetos\\Pos engenharia de software\\Cursos extras\\APIGestaoPedidos\\Infraestruture\\Interfaces\\IPedidoRepository.cs",
+              "RelativeToolTip": "Infraestruture\\Interfaces\\IPedidoRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-28T23:15:07.779Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Pedido.cs",
+              "DocumentMoniker": "C:\\Projetos\\Pos engenharia de software\\Cursos extras\\APIGestaoPedidos\\Domain\\Entities\\Pedido.cs",
+              "RelativeDocumentMoniker": "Domain\\Entities\\Pedido.cs",
+              "ToolTip": "C:\\Projetos\\Pos engenharia de software\\Cursos extras\\APIGestaoPedidos\\Domain\\Entities\\Pedido.cs",
+              "RelativeToolTip": "Domain\\Entities\\Pedido.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-28T23:14:58.018Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Cliente.cs",
+              "DocumentMoniker": "C:\\Projetos\\Pos engenharia de software\\Cursos extras\\APIGestaoPedidos\\Domain\\Entities\\Cliente.cs",
+              "RelativeDocumentMoniker": "Domain\\Entities\\Cliente.cs",
+              "ToolTip": "C:\\Projetos\\Pos engenharia de software\\Cursos extras\\APIGestaoPedidos\\Domain\\Entities\\Cliente.cs",
+              "RelativeToolTip": "Domain\\Entities\\Cliente.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-28T23:14:52.028Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PedidoItem.cs",
+              "DocumentMoniker": "C:\\Projetos\\Pos engenharia de software\\Cursos extras\\APIGestaoPedidos\\Domain\\Entities\\PedidoItem.cs",
+              "RelativeDocumentMoniker": "Domain\\Entities\\PedidoItem.cs",
+              "ToolTip": "C:\\Projetos\\Pos engenharia de software\\Cursos extras\\APIGestaoPedidos\\Domain\\Entities\\PedidoItem.cs",
+              "RelativeToolTip": "Domain\\Entities\\PedidoItem.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAIwBcAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-28T23:13:39.732Z",
+              "EditorCaption": ""
             }
           ]
         }

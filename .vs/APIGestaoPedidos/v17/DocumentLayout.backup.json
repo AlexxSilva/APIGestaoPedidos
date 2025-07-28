@@ -3,44 +3,8 @@
   "WorkspaceRootPath": "C:\\Projetos\\Pos engenharia de software\\Cursos extras\\APIGestaoPedidos\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E5FFAB83-2577-45A5-8CB3-73CE8E6DC2AE}|APIGestaoPedidos.csproj|c:\\projetos\\pos engenharia de software\\cursos extras\\apigestaopedidos\\services\\pedidoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E5FFAB83-2577-45A5-8CB3-73CE8E6DC2AE}|APIGestaoPedidos.csproj|solutionrelative:services\\pedidoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E5FFAB83-2577-45A5-8CB3-73CE8E6DC2AE}|APIGestaoPedidos.csproj|c:\\projetos\\pos engenharia de software\\cursos extras\\apigestaopedidos\\dto\\pedidoitemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E5FFAB83-2577-45A5-8CB3-73CE8E6DC2AE}|APIGestaoPedidos.csproj|solutionrelative:dto\\pedidoitemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E5FFAB83-2577-45A5-8CB3-73CE8E6DC2AE}|APIGestaoPedidos.csproj|c:\\projetos\\pos engenharia de software\\cursos extras\\apigestaopedidos\\dto\\pedidodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E5FFAB83-2577-45A5-8CB3-73CE8E6DC2AE}|APIGestaoPedidos.csproj|solutionrelative:dto\\pedidodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E5FFAB83-2577-45A5-8CB3-73CE8E6DC2AE}|APIGestaoPedidos.csproj|c:\\projetos\\pos engenharia de software\\cursos extras\\apigestaopedidos\\controllers\\pedidoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E5FFAB83-2577-45A5-8CB3-73CE8E6DC2AE}|APIGestaoPedidos.csproj|solutionrelative:controllers\\pedidoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E5FFAB83-2577-45A5-8CB3-73CE8E6DC2AE}|APIGestaoPedidos.csproj|c:\\projetos\\pos engenharia de software\\cursos extras\\apigestaopedidos\\domain\\entities\\pedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E5FFAB83-2577-45A5-8CB3-73CE8E6DC2AE}|APIGestaoPedidos.csproj|solutionrelative:domain\\entities\\pedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E5FFAB83-2577-45A5-8CB3-73CE8E6DC2AE}|APIGestaoPedidos.csproj|c:\\projetos\\pos engenharia de software\\cursos extras\\apigestaopedidos\\domain\\entities\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E5FFAB83-2577-45A5-8CB3-73CE8E6DC2AE}|APIGestaoPedidos.csproj|solutionrelative:domain\\entities\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E5FFAB83-2577-45A5-8CB3-73CE8E6DC2AE}|APIGestaoPedidos.csproj|c:\\projetos\\pos engenharia de software\\cursos extras\\apigestaopedidos\\domain\\entities\\pedidoitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E5FFAB83-2577-45A5-8CB3-73CE8E6DC2AE}|APIGestaoPedidos.csproj|solutionrelative:domain\\entities\\pedidoitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E5FFAB83-2577-45A5-8CB3-73CE8E6DC2AE}|APIGestaoPedidos.csproj|c:\\projetos\\pos engenharia de software\\cursos extras\\apigestaopedidos\\controllers\\produtoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E5FFAB83-2577-45A5-8CB3-73CE8E6DC2AE}|APIGestaoPedidos.csproj|solutionrelative:controllers\\produtoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E5FFAB83-2577-45A5-8CB3-73CE8E6DC2AE}|APIGestaoPedidos.csproj|c:\\projetos\\pos engenharia de software\\cursos extras\\apigestaopedidos\\controllers\\clientescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E5FFAB83-2577-45A5-8CB3-73CE8E6DC2AE}|APIGestaoPedidos.csproj|solutionrelative:controllers\\clientescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E5FFAB83-2577-45A5-8CB3-73CE8E6DC2AE}|APIGestaoPedidos.csproj|c:\\projetos\\pos engenharia de software\\cursos extras\\apigestaopedidos\\domain\\entities\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E5FFAB83-2577-45A5-8CB3-73CE8E6DC2AE}|APIGestaoPedidos.csproj|solutionrelative:domain\\entities\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,7 +14,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -86,132 +50,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "PedidoDto.cs",
-              "DocumentMoniker": "C:\\Projetos\\Pos engenharia de software\\Cursos extras\\APIGestaoPedidos\\Dto\\PedidoDto.cs",
-              "RelativeDocumentMoniker": "Dto\\PedidoDto.cs",
-              "ToolTip": "C:\\Projetos\\Pos engenharia de software\\Cursos extras\\APIGestaoPedidos\\Dto\\PedidoDto.cs",
-              "RelativeToolTip": "Dto\\PedidoDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA2AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-20T20:27:08.189Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "PedidoItemDto.cs",
-              "DocumentMoniker": "C:\\Projetos\\Pos engenharia de software\\Cursos extras\\APIGestaoPedidos\\Dto\\PedidoItemDto.cs",
-              "RelativeDocumentMoniker": "Dto\\PedidoItemDto.cs",
-              "ToolTip": "C:\\Projetos\\Pos engenharia de software\\Cursos extras\\APIGestaoPedidos\\Dto\\PedidoItemDto.cs",
-              "RelativeToolTip": "Dto\\PedidoItemDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-20T20:26:55.827Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "PedidoService.cs",
-              "DocumentMoniker": "C:\\Projetos\\Pos engenharia de software\\Cursos extras\\APIGestaoPedidos\\Services\\PedidoService.cs",
-              "RelativeDocumentMoniker": "Services\\PedidoService.cs",
-              "ToolTip": "C:\\Projetos\\Pos engenharia de software\\Cursos extras\\APIGestaoPedidos\\Services\\PedidoService.cs",
-              "RelativeToolTip": "Services\\PedidoService.cs",
-              "ViewState": "AgIAACYAAAAAAAAAAAA6wDoAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-20T20:13:34.517Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
               "Title": "PedidoItem.cs",
               "DocumentMoniker": "C:\\Projetos\\Pos engenharia de software\\Cursos extras\\APIGestaoPedidos\\Domain\\Entities\\PedidoItem.cs",
               "RelativeDocumentMoniker": "Domain\\Entities\\PedidoItem.cs",
-              "ToolTip": "C:\\Projetos\\Pos engenharia de software\\Cursos extras\\APIGestaoPedidos\\Domain\\Entities\\PedidoItem.cs",
-              "RelativeToolTip": "Domain\\Entities\\PedidoItem.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAYAAAACAAAAAAAAAA==",
+              "ToolTip": "C:\\Projetos\\Pos engenharia de software\\Cursos extras\\APIGestaoPedidos\\Domain\\Entities\\PedidoItem.cs*",
+              "RelativeToolTip": "Domain\\Entities\\PedidoItem.cs*",
+              "ViewState": "AgIAAAoAAAAAAAAAAAA2wBcAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-20T20:06:53.787Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Pedido.cs",
-              "DocumentMoniker": "C:\\Projetos\\Pos engenharia de software\\Cursos extras\\APIGestaoPedidos\\Domain\\Entities\\Pedido.cs",
-              "RelativeDocumentMoniker": "Domain\\Entities\\Pedido.cs",
-              "ToolTip": "C:\\Projetos\\Pos engenharia de software\\Cursos extras\\APIGestaoPedidos\\Domain\\Entities\\Pedido.cs",
-              "RelativeToolTip": "Domain\\Entities\\Pedido.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAswBsAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-20T20:06:24.107Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "ClientesController.cs",
-              "DocumentMoniker": "C:\\Projetos\\Pos engenharia de software\\Cursos extras\\APIGestaoPedidos\\Controllers\\ClientesController.cs",
-              "RelativeDocumentMoniker": "Controllers\\ClientesController.cs",
-              "ToolTip": "C:\\Projetos\\Pos engenharia de software\\Cursos extras\\APIGestaoPedidos\\Controllers\\ClientesController.cs",
-              "RelativeToolTip": "Controllers\\ClientesController.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAYwCQAAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-20T20:02:20.073Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ProdutosController.cs",
-              "DocumentMoniker": "C:\\Projetos\\Pos engenharia de software\\Cursos extras\\APIGestaoPedidos\\Controllers\\ProdutosController.cs",
-              "RelativeDocumentMoniker": "Controllers\\ProdutosController.cs",
-              "ToolTip": "C:\\Projetos\\Pos engenharia de software\\Cursos extras\\APIGestaoPedidos\\Controllers\\ProdutosController.cs",
-              "RelativeToolTip": "Controllers\\ProdutosController.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAYwCAAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-20T20:02:16.414Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "PedidosController.cs",
-              "DocumentMoniker": "C:\\Projetos\\Pos engenharia de software\\Cursos extras\\APIGestaoPedidos\\Controllers\\PedidosController.cs",
-              "RelativeDocumentMoniker": "Controllers\\PedidosController.cs",
-              "ToolTip": "C:\\Projetos\\Pos engenharia de software\\Cursos extras\\APIGestaoPedidos\\Controllers\\PedidosController.cs",
-              "RelativeToolTip": "Controllers\\PedidosController.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAADwvxwAAAA3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-20T20:02:01.658Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Cliente.cs",
-              "DocumentMoniker": "C:\\Projetos\\Pos engenharia de software\\Cursos extras\\APIGestaoPedidos\\Domain\\Entities\\Cliente.cs",
-              "RelativeDocumentMoniker": "Domain\\Entities\\Cliente.cs",
-              "ToolTip": "C:\\Projetos\\Pos engenharia de software\\Cursos extras\\APIGestaoPedidos\\Domain\\Entities\\Cliente.cs",
-              "RelativeToolTip": "Domain\\Entities\\Cliente.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-20T20:00:05.49Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Produto.cs",
-              "DocumentMoniker": "C:\\Projetos\\Pos engenharia de software\\Cursos extras\\APIGestaoPedidos\\Domain\\Entities\\Produto.cs",
-              "RelativeDocumentMoniker": "Domain\\Entities\\Produto.cs",
-              "ToolTip": "C:\\Projetos\\Pos engenharia de software\\Cursos extras\\APIGestaoPedidos\\Domain\\Entities\\Produto.cs",
-              "RelativeToolTip": "Domain\\Entities\\Produto.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAcAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-20T20:00:01.771Z",
+              "WhenOpened": "2025-07-28T23:13:39.732Z",
               "EditorCaption": ""
             }
           ]
