@@ -1,7 +1,9 @@
 using APIGestaoPedidos.Infraestruture.Context;
 using APIGestaoPedidos.Infraestruture.Interfaces;
 using APIGestaoPedidos.Infraestruture.Repositories;
+using APIGestaoPedidos.Mappings;
 using APIGestaoPedidos.Services;
+using APIGestaoPedidos.Services.Interfaces;
 using Microsoft.EntityFrameworkCore;
 using System;
 
@@ -18,6 +20,11 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 
 builder.Services.AddScoped<IPedidoRepository, PedidoRepository>();
 builder.Services.AddScoped<PedidoService>();
+
+builder.Services.AddScoped<IClienteRepository, ClienteRepository>();
+builder.Services.AddScoped<IClienteService, ClienteService>();
+
+builder.Services.AddAutoMapper(typeof(ClienteProfile));
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

@@ -1,5 +1,6 @@
 ﻿using APIGestaoPedidos.Domain.Entidades;
 using APIGestaoPedidos.Dto;
+using APIGestaoPedidos.Dto.DtoPedido;
 using APIGestaoPedidos.Infraestruture.Context;
 using Microsoft.EntityFrameworkCore;
 

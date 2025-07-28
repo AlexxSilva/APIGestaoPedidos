@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("APIGestaoPedidos")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+37339eb39444c619aba5c6cebec52e5d2199baf4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+be132cd216d4f79986e3ebb4b3241eacd174be70")]
 [assembly: System.Reflection.AssemblyProductAttribute("APIGestaoPedidos")]
 [assembly: System.Reflection.AssemblyTitleAttribute("APIGestaoPedidos")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -18,8 +18,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "cliente",
-        "Type": "APIGestaoPedidos.Domain.Entities.Cliente",
+        "Name": "dto",
+        "Type": "APIGestaoPedidos.Dto.CriarClienteDto",
         "IsRequired": true
       }
     ],

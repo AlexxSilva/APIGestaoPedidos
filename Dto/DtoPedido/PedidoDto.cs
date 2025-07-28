@@ -1,4 +1,4 @@
-﻿namespace APIGestaoPedidos.Dto
+﻿namespace APIGestaoPedidos.Dto.DtoPedido
 {
     public class PedidoDto
     {

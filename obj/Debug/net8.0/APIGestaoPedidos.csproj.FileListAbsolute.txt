@@ -141,3 +141,5 @@ C:\Projetos\Pos engenharia de software\Cursos extras\APIGestaoPedidos\obj\Debug\
 C:\Projetos\Pos engenharia de software\Cursos extras\APIGestaoPedidos\obj\Debug\net8.0\APIGestaoPedidos.genruntimeconfig.cache
 C:\Projetos\Pos engenharia de software\Cursos extras\APIGestaoPedidos\obj\Debug\net8.0\ref\APIGestaoPedidos.dll
 C:\Projetos\Pos engenharia de software\Cursos extras\APIGestaoPedidos\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Projetos\Pos engenharia de software\Cursos extras\APIGestaoPedidos\bin\Debug\net8.0\AutoMapper.dll
+C:\Projetos\Pos engenharia de software\Cursos extras\APIGestaoPedidos\bin\Debug\net8.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
