@@ -1,7 +1,8 @@
 ﻿using APIGestaoPedidos.Domain.Entities;
 using APIGestaoPedidos.Infraestruture.Interfaces;
+using APIGestaoPedidos.Services.Interfaces;
 
-namespace APIGestaoPedidos.Services.Interfaces
+namespace APIGestaoPedidos.Services.Servicos
 {
     public class ClienteService : IClienteService
     {

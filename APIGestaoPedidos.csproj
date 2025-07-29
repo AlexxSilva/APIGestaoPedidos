@@ -22,9 +22,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Domain\Interfaces\" />
     <Folder Include="Migrations\" />
-    <Folder Include="Services\Servicos\" />
   </ItemGroup>
 
 </Project>

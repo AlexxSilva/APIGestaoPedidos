@@ -17,18 +17,11 @@ namespace APIGestaoPedidos.Infraestruture.Repositories
 
         public async Task AdicionarClienteAsync(Cliente cliente)
         {
-            _context.Clientes.Add(cliente);
+            await _context.Clientes.AddAsync(cliente);
             await _context.SaveChangesAsync();
         }
 
-        public async Task<Cliente> ObterClientePorIdAsync(int id)
-        {
-            return await _context.Clientes.FirstOrDefaultAsync(p => p.Id == id);
-        }
-
-        public async Task<List<Cliente>> ObterTodosClientesAsync()
-        {
-            return await _context.Clientes.ToListAsync();
-        }
+        public async Task<Cliente> ObterClientePorIdAsync(int id) => await _context.Clientes.FirstOrDefaultAsync(p => p.Id == id);
+        public async Task<List<Cliente>> ObterTodosClientesAsync() => await _context.Clientes.ToListAsync();
     }
 }

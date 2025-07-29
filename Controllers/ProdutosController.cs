@@ -1,5 +1,8 @@
 ﻿using APIGestaoPedidos.Domain.Entities;
+using APIGestaoPedidos.Dto.DtoProduto;
 using APIGestaoPedidos.Infraestruture.Context;
+using APIGestaoPedidos.Services.Interfaces;
+using AutoMapper;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -10,34 +13,43 @@ namespace APIGestaoPedidos.Controllers
     [ApiController]
     public class ProdutosController : ControllerBase
     {
-        private readonly AppDbContext _context;
+        private readonly IProdutoService _service;
+        private readonly IMapper _mapper;
 
-        public ProdutosController(AppDbContext context)
+        public ProdutosController(IProdutoService service, IMapper mapper)
         {
-            _context = context;
+            _service = service;
+            _mapper = mapper;
         }
 
         [HttpGet]
         public async Task<IActionResult> GetTodos()
         {
-            var produtos = await _context.Produtos.ToListAsync();
-            return Ok(produtos);
+            var produtos = await _service.ObterTodosProdutosAsync();
+            var dto = _mapper.Map<IEnumerable<ProdutoDto>>(produtos);
+            return Ok(dto);
         }
 
         [HttpGet("{id}")]
         public async Task<IActionResult> GetPorId(int id)
         {
-            var produto = await _context.Produtos.FindAsync(id);
+            var produto = await _service.ObterProdutoPorIdAsync(id);
             if (produto == null) return NotFound();
-            return Ok(produto);
+
+            var dto = _mapper.Map<ProdutoDto>(produto);
+            return Ok(dto);
         }
 
         [HttpPost]
-        public async Task<IActionResult> Criar([FromBody] Produto produto)
+        public async Task<IActionResult> Criar([FromBody] CriarProdutoDto dto)
         {
-            _context.Produtos.Add(produto);
-            await _context.SaveChangesAsync();
-            return CreatedAtAction(nameof(GetPorId), new { id = produto.Id }, produto);
+            if (!ModelState.IsValid) return BadRequest(ModelState);
+
+            var produto = _mapper.Map<Produto>(dto);
+            await _service.AdicionarProdutoAsync(produto);
+
+            var retorno = _mapper.Map<ProdutoDto>(produto);
+            return CreatedAtAction(nameof(GetPorId), new { id = produto.Id }, retorno);
         }
     }
 }
