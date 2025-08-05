@@ -1,12 +1,13 @@
 ﻿using APIGestaoPedidos.Domain.Entidades;
+using APIGestaoPedidos.Dto.DtoPedido;
 
 namespace APIGestaoPedidos.Infraestruture.Interfaces
 {
     public interface IPedidoRepository
     {
-        Task<Pedido?> ObterPorIdAsync(int id);
-        Task<List<Pedido>> ObterTodosAsync();
-        Task CriarAsync(Pedido pedido);
-        Task AtualizarAsync(Pedido pedido);
+        Task<PedidoDto?> ObterPorIdAsync(int id);
+        Task<List<PedidoDto>> ObterTodosAsync();
+        Task<Pedido> CriarPedidoAsync(Pedido pedido);
+        public  Task AprovarPedidoAsync(int id);
     }
 }

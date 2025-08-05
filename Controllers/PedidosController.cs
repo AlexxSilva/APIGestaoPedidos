@@ -1,7 +1,8 @@
 ﻿using APIGestaoPedidos.Domain.Entidades;
 using APIGestaoPedidos.Domain.Entities;
 using APIGestaoPedidos.Infraestruture.Context;
-using APIGestaoPedidos.Services;
+using APIGestaoPedidos.Services.Interfaces;
+using APIGestaoPedidos.Services.Servicos;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -14,9 +15,9 @@ namespace APIGestaoPedidos.Controllers
     [Route("api/[controller]")]
     public class PedidosController : ControllerBase
     {
-        private readonly PedidoService _pedidoService;
+        private readonly IPedidoService _pedidoService;
 
-        public PedidosController(PedidoService pedidoService)
+        public PedidosController(IPedidoService pedidoService)
         {
             _pedidoService = pedidoService;
         }
@@ -35,7 +36,7 @@ namespace APIGestaoPedidos.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> GetPorId(int id)
         {
-            var pedidos = await _pedidoService.ListarTodosAsync();
+            var pedidos = await _pedidoService.BuscarPorIdAsync(id);
             return Ok(pedidos);
         }
 
