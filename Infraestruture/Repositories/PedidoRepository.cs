@@ -1,7 +1,9 @@
 ﻿using APIGestaoPedidos.Domain.Entidades;
 using APIGestaoPedidos.Dto.DtoPedido;
+using APIGestaoPedidos.Events;
 using APIGestaoPedidos.Infraestruture.Context;
 using APIGestaoPedidos.Infraestruture.Interfaces;
+using APIGestaoPedidos.MessageBus.Interfaces;
 using Microsoft.EntityFrameworkCore;
 using System;
 
@@ -10,10 +12,12 @@ namespace APIGestaoPedidos.Infraestruture.Repositories
     public class PedidoRepository : IPedidoRepository
     {
         private readonly AppDbContext _context;
+        private readonly IMessageBus _messageBus;
 
-        public PedidoRepository(AppDbContext context)
+        public PedidoRepository(AppDbContext context, IMessageBus messageBus)
         {
             _context = context;
+            _messageBus = messageBus;
         }
 
         public async Task<PedidoDto?> ObterPorIdAsync(int id)
@@ -102,7 +106,18 @@ namespace APIGestaoPedidos.Infraestruture.Repositories
             if (pedido == null)
                 throw new InvalidOperationException("Pedido não encontrado.");
 
-            pedido.Aprovar(); // Método de domínio que altera o Status
+            pedido.Aprovar(); 
+
+            //publicar evento na fila
+            var evento = new PedidoAprovadoEvent
+            {
+                PedidoId = pedido.Id,
+                ClienteId = pedido.ClienteId,
+                ValorTotal = pedido.Itens.Sum(i => i.ValorUnitario)
+            };
+
+            await _messageBus.PublicarAsync(evento, "pagamento-pedido-aprovado");
+
             await _context.SaveChangesAsync();
         }
     }
